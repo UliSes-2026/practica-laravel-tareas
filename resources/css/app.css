@@ -7,3 +7,46 @@
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
+
+body {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #222;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    color: #6d28d9;
+}
+
+a {
+    display: inline-block;
+    margin: 5px 10px 5px 0;
+    color: #6d28d9;
+}
+
+form {
+    margin: 20px 0;
+}
+
+input,
+textarea {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 16px;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    background-color: #6d28d9;
+    cursor: pointer;
+}

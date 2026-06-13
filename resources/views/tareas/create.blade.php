@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Nueva tarea</title>
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
     <h1>Crear tarea</h1>

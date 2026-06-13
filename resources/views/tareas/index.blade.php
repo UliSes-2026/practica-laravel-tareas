@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Mis tareas</title>
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
     <h1>Lista de tareas</h1>
@@ -18,7 +19,7 @@
 
            <button type="submit">Eliminar</button>
         </form>
-        
+
     @empty
         <p>Todavía no hay tareas registradas.</p>
     @endforelse
