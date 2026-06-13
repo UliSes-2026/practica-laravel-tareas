@@ -24,10 +24,9 @@ class TareaController extends Controller
     public function store(Request $request)
     {
         $datos = $request->validate([
-            'titulo' => 'required|max:255',
-            'descripcion' => 'nullable',
-        ]);
-
+        'titulo' => ['required', 'string', 'max:255'],
+        'descripcion' => ['nullable', 'string', 'max:1000'],
+    ]);
         $tarea = Tarea::create($datos);
 
         return response()->json($tarea, 201);
@@ -47,10 +46,9 @@ class TareaController extends Controller
     public function update(Request $request, Tarea $tarea)
     {
         $datos = $request->validate([
-            'titulo' => 'required|max:255',
-            'descripcion' => 'nullable',
+        'titulo' => ['required', 'string', 'max:255'],
+        'descripcion' => ['nullable', 'string', 'max:1000'],
         ]);
-
         $tarea->update($datos);
 
         return response()->json($tarea);
